@@ -1,0 +1,14 @@
+{
+  "name": "nightwatch-config-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "selenium": "selenium-standalone start",
+    "rm-test-resources": "rm -rf ./test/e2e-reports && rm -rf ./test/e2e-screens",
+    "test:chrome": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env chrome",
+    "test:firefox": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env firefox"
+  },
+  "author": "Łukasz Sałajczyk <l.salajczyk@gmail.com>",
+  "license": "ISC"
+}

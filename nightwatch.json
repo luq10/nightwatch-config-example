@@ -1,0 +1,27 @@
+{
+  "src_folders": "./test/e2e",
+  "output_folder": "./test/e2e-reports",
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "screenshots" : {
+        "enabled" : true,
+        "on_failure" : true,
+        "on_error" : true,
+        "path" : "./test/e2e-screens"
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      }
+    }
+  }
+}
