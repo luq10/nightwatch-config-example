@@ -7,8 +7,12 @@
     "selenium": "selenium-standalone start",
     "rm-test-resources": "rm -rf ./test/e2e-reports && rm -rf ./test/e2e-screens",
     "test:chrome": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env chrome",
-    "test:firefox": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env firefox"
+    "test:firefox": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env firefox",
+    "test:phantomjs": "npm run rm-test-resources && nightwatch -c ./nightwatch.json --env phantomjs"
   },
   "author": "Łukasz Sałajczyk <l.salajczyk@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "phantomjs-prebuilt": "^2.1.14"
+  }
 }
